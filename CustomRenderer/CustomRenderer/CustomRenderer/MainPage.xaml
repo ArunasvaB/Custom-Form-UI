@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomRenderer; assembly = CustomRenderer "
+             xmlns:widget="clr-namespace:Android.Widget;assembly=Mono.Android"
+             x:Class="CustomRenderer.MainPage"
+           
+             >
+    <Grid>
+       <Grid.RowDefinitions>
+           <RowDefinition Height="60"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="10*"/>
+           
+           
+       </Grid.RowDefinitions>
+       
+       <Grid.ColumnDefinitions>
+           <ColumnDefinition Width="*"/>
+           <ColumnDefinition Width="40*"/>
+        
+       </Grid.ColumnDefinitions>
+      
+        <!--Background-->
+        <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                 BackgroundColor="White"/>
+      
+        <!--Header-->
+       <StackLayout Grid.Row="0" Grid.Column="0"
+                    BackgroundColor="Green"
+                    Grid.ColumnSpan="4"
+                    x:Name="headerBox"
+                    >
+          <Label Text="Form - Text Field"
+                 BackgroundColor="Green"
+                 HorizontalOptions="Center"
+                 TextColor="White"
+                 FontAttributes="Bold"
+                 Padding="0,25,0,0"/>
+      </StackLayout>
+     
+        <StackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="3" 
+                     x:Name="AreaBox"
+                     IsVisible="False"
+                     BackgroundColor="White"
+                     >
+        <local:XEditor
+            AutoSize="TextChanges"
+            HorizontalOptions="Center"
+            x:Name="Area"
+        />
+        </StackLayout>
+        <!--Left Label Box-->
+        <StackLayout Grid.Column="0" Grid.Row="1" HorizontalOptions="Start"
+                     VerticalOptions="Start"
+                     Padding="30,18,0,0 "
+                     Grid.ColumnSpan="2"
+                     x:Name="Labelbox">
+           
+            <!--arabic entry-->
+            <local:MyEntry 
+                Text="لحضور المؤتمر الدولي"
+                TextColor="Green"
+                FontSize="Small"
+                x:Name="OtherField"
+                MaxLength="64"
+                IsVisible="False"
+            />
+            <!--email label-->
+            <Label 
+                Text="Email"
+                TextColor="Black"
+                FontAttributes="Bold"
+                x:Name="Emailabel"
+            />
+            
+            <!--Errors-->
+            <Label 
+                Text="This is a required field"
+                TextColor="Red"
+                IsVisible="False"
+                x:Name="Empty"
+            />
+            <Label 
+                Text="Invalid Email"
+                
+                TextColor="Red"
+                IsVisible="False"
+                x:Name="Error"
+            />
+            
+            
+        </StackLayout>
+        
+        <!--Text Entry Box-->
+        <StackLayout Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"
+                     HorizontalOptions = "FillAndExpand"
+                     VerticalOptions="Start"
+                     Padding="50,10,0,0"
+                    Margin="150,0,0,0"
+                     x:Name="Fieldbox"
+                     IsVisible="True">
+           
+            <!--arabic label-->
+            <Label 
+                Text="الدولي"
+                TextColor="Black"
+                FontAttributes="Bold"
+                x:Name="OtherLabel"
+                IsVisible="False"
+                Padding="0,15,20,0 "
+            />
+            <!--cover label-->
+            <Label
+                Padding="20,10,0,0"
+                Text="JohnDoe123@gmail.com"
+                x:Name="CoverLabel"
+                TextColor="Green"
+                FontSize="Small">
+                
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="ChangeText"
+                        NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+                
+            </Label>
+            
+            <!--Main Entry-->
+            <local:MyEntry
+                Margin="16,0,0,700"
+              Placeholder="e.g. johndoe99@mail.com"
+              TextColor="Green"
+              FontSize="Small"
+              x:Name="TextField"
+              IsVisible="False"
+              MaxLength="64"
+              
+            />
+       
+        </StackLayout>
+        
+        
+        <!--Line-->
+        <StackLayout Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4"
+                     Padding = " 0,10,0,0"
+                     x:Name="lineBox1"
+                     >
+            <BoxView 
+                Color="Gray"
+                HeightRequest="1"
+                HorizontalOptions="FillAndExpand"
+             
+            />  
+        </StackLayout>
+        <!--line2-->
+        <StackLayout Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4"
+                     Padding = " 0,70,0,0"
+                     x:Name="lineBox2"
+        >
+            <BoxView 
+                Color="Gray"
+                HeightRequest="1"
+                HorizontalOptions="FillAndExpand"
+            />  
+            
+        </StackLayout>
+     
+        
+        <!--comment label-->
+        <StackLayout Grid.Column="0" Grid.Row="2"
+                     Grid.ColumnSpan="2"
+                     x:Name="fieldBox2"
+                     >
+            <Label Text="Comments"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Padding="28,30,0,0 "
+            />
+            
+        </StackLayout>
+      
+        <!--comment field-->
+        <StackLayout Grid.Column="1" Grid.Row="2"
+                     Grid.ColumnSpan="3"
+                     x:Name="commentCoverBox"
+                     >
+         
+             
+            <Label
+                   Text="Enter Comment Here"
+                   Margin="218,30,0,780"
+                   TextColor="Green"
+                   x:Name="areaCover"
+                   >
+               <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="OnNextPageButtonClicked"
+                    NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+               </Label> 
+            
+        </StackLayout>
+     
+        
+        <!-- language Button-->
+        <Button    Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4"
+                   Text="Change Language"
+                   BackgroundColor="Green"
+                   TextColor="White"
+                   x:Name="changeButn"
+                   Clicked="Swap"
+        />
+        
+    </Grid>
+</ContentPage>

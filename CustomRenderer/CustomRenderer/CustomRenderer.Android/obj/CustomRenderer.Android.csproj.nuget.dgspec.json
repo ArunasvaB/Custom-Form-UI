@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.Android\\CustomRenderer.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.Android\\CustomRenderer.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.Android\\CustomRenderer.Android.csproj",
+        "projectName": "CustomRenderer.Android",
+        "projectPath": "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.Android\\CustomRenderer.Android.csproj",
+        "packagesPath": "C:\\Users\\aruna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aruna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991640, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.iOS\\CustomRenderer.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.iOS\\CustomRenderer.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.iOS\\CustomRenderer.iOS.csproj",
+        "projectName": "CustomRenderer.iOS",
+        "projectPath": "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.iOS\\CustomRenderer.iOS.csproj",
+        "packagesPath": "C:\\Users\\aruna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aruna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991640, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T9lO0vElJmkRLIlWUE5FYEpWeGr5tfqF2LHVTOhK5tupGZBExaOR0/L1ZqyfXCbEBNoO49t/EWhwd/LuEccqSg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aruna\\Desktop\\Codes\\CustomRenderer\\CustomRenderer\\CustomRenderer.iOS\\CustomRenderer.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aruna\\.nuget\\packages\\xamarin.forms\\4.4.0.991640\\xamarin.forms.4.4.0.991640.nupkg.sha512"
+  ],
+  "logs": []
+}
